@@ -3,9 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import 'normalize.css/normalize.css'// 引入初始化样式
 Vue.config.productionTip = false
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
