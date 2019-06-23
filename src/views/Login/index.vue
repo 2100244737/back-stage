@@ -3,40 +3,33 @@
     <div class="login-box">
       <h1>后台管理系统</h1>
       <div class="box">
-        <Form>
-          <FormItem label="用户名" >
-            <Input  v-model="formData.username"/>
-          </FormItem>
-          <FormItem label="密码">
-            <Input v-model="formData.password" type="password"/>
-          </FormItem>
-          <FormItem>
-            <Button type="primary" @click="handleLogin" size="medium">立即登录</Button>
-          </FormItem>
-        </Form>
+        <el-form>
+          <el-form-item  label="用户名" >
+            <el-input  v-model="formData.username"/>
+          </el-form-item>
+          <el-form-item label="密码">
+            <el-input v-model="formData.password" type="password"/>
+          </el-form-item>
+          <el-form-item>
+            <el-button type="primary" @click="handleLogin" size="medium">立即登录</el-button>
+          </el-form-item>
+        </el-form>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import {Input, Form, FormItem, Button} from 'element-ui'
 import axios from 'axios'
 export default {
   name: 'Login',
   data () {
     return {
       formData: {
-        username: '',
-        password: ''
+        username: 'admin',
+        password: 'admin'
       }
     }
-  },
-  components: {
-    Input,
-    Form,
-    FormItem,
-    Button
   },
   methods: {
     handleLogin () {
