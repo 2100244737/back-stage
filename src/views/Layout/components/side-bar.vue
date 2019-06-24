@@ -1,5 +1,5 @@
 <template>
-  <el-menu mode="vertical" background-color="#304156" text-color="#fff">
+  <el-menu mode="vertical" background-color="#304156" text-color="#fff" :router="true">
     <sideBarItem v-for="(item, index) in routes" :opt="item" :key="index"></sideBarItem>
   </el-menu>
 </template>

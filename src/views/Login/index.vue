@@ -35,7 +35,7 @@ export default {
     handleLogin () {
       axios.post('/api/admin/adminUser/login', this.formData).then(res => {
         if (res.data.code === 200) {
-          this.$router.push('/layout/index')
+          this.$router.push('/adminUser/list')
         } else {
           alert('用户名密码错误')
         }

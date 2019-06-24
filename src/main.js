@@ -7,8 +7,10 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'normalize.css/normalize.css'// 引入初始化样式
 import '@/views/globalStyle/init.scss' // 引入自己的样式
+import $axios from './utils/index'
 Vue.config.productionTip = false
 Vue.use(ElementUI)
+Vue.use($axios)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

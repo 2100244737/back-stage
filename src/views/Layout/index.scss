@@ -2,6 +2,13 @@
   .header{
     text-align: center;
     border: 2px solid #e0e0e0;
+    position: relative;
+    .bread {
+      position: absolute;
+      top: 27px;
+      left: 215px;
+      font-size: 18px;
+    }
     h1 {
       padding: 15px;
       color:#333;
@@ -22,4 +29,7 @@
     margin-left: 200px;
     padding: 15px;
   }
+}
+.el-breadcrumb {
+  font-size: 18px;
 }
